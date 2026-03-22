@@ -2,8 +2,8 @@
 # Trabalho Prático - Semanas 3 e 4
 
 ## Informações Gerais
-- Nome: 
-- Matricula:
+- Nome: Lucas Batista Domingues Nogueira
+- Matricula: 855439
 
 ## Print da tela da página criada (Curriculum Vitae)
 
