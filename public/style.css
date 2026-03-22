@@ -1,0 +1,206 @@
+/* --- ESTILOS GERAIS E CORES --- */
+:root {
+    --bg-sidebar: #1A1A1A; /* Preto rico para a esquerda */
+    --text-sidebar: #F0F0F0;
+    --bg-header-pink: #F3EAE4; /* Rosa pastel claro para o cabeçalho */
+    --bg-main: #FFFFFF;
+    --text-main: #333333;
+    --accent-lines: #E0E0E0; /* Cor das linhas horizontais */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F5F5F5;
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+/* --- WRAPPER DO LAYOUT --- */
+.cv-wrapper {
+    display: flex;
+    max-width: 1000px;
+    margin: 30px auto;
+    background-color: var(--bg-main);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    min-height: 100vh;
+}
+
+/* --- COLUNA DA ESQUERDA (SIDEBAR) --- */
+.sidebar {
+    flex: 1.2; /* Ligeiramente mais estreita */
+    background-color: var(--bg-sidebar);
+    color: var(--text-sidebar);
+    padding: 40px 30px;
+}
+
+.foto-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.foto-perfil {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    object-fit: cover;
+}
+
+.summary-section {
+    position: relative;
+    margin-bottom: 40px;
+    font-size: 0.95rem;
+    font-style: italic;
+    color: #CCCCCC;
+}
+
+.quote-mark {
+    position: absolute;
+    top: -20px;
+    left: -10px;
+    font-size: 5rem;
+    color: #444444;
+    line-height: 1;
+}
+
+.left-section {
+    margin-bottom: 30px;
+}
+
+.left-section h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #444444;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    color: #FFFFFF;
+}
+
+.left-section ul {
+    list-style-type: none;
+    font-size: 0.9rem;
+}
+
+.left-section ul li {
+    margin-bottom: 8px;
+}
+
+.side-nav ul li a {
+    color: var(--text-sidebar);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.side-nav ul li a:hover {
+    color: #A0A0A0;
+}
+
+/* --- COLUNA DA DIREITA (CONTEÚDO PRINCIPAL) --- */
+.main-content {
+    flex: 2.8; /* Mais larga */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Cabeçalho Rosa */
+.header-main {
+    background-color: var(--bg-header-pink);
+    padding: 60px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.header-name-title h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #222222;
+    margin-bottom: 5px;
+}
+
+.header-name-title h2 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #666666;
+}
+
+.contact-info {
+    text-align: right;
+    font-size: 0.85rem;
+    color: #555555;
+}
+
+/* Áreas de Experiência/Educação */
+.main-sections {
+    padding: 50px;
+}
+
+.right-section {
+    margin-bottom: 50px;
+}
+
+.right-section h3 {
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+    border-bottom: 1px solid var(--accent-lines);
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    color: #222222;
+}
+
+.entry {
+    margin-bottom: 25px;
+}
+
+.entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 10px;
+}
+
+.entry-header h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #222222;
+}
+
+.entry-header p {
+    font-size: 0.9rem;
+    color: #666666;
+}
+
+.entry-date {
+    font-size: 0.85rem;
+    color: #888888;
+    font-style: italic;
+}
+
+.entry-details {
+    list-style-type: none;
+    font-size: 0.9rem;
+    color: #555555;
+    padding-left: 0;
+}
+
+.entry-details li::before {
+    content: "•";
+    color: #999999;
+    padding-right: 10px;
+}
+
+.footer-bottom {
+    margin-top: auto;
+    padding: 20px 50px;
+    border-top: 1px solid var(--accent-lines);
+    font-size: 0.8rem;
+    color: #AAAAAA;
+    text-align: center;
+}
