@@ -7,4 +7,4 @@
 
 ## Print da tela da página criada (Curriculum Vitae)
 
-![Print do site](meuperfilT2Diw.png)
+![Print do site](public/meuperfilT2Diw.png)
